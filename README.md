@@ -4,7 +4,6 @@
 # Loja Virtual - Projeto em Java
 
 Este é um sistema de loja virtual simples desenvolvido em Java, com funcionalidades básicas de administração, compras e gerenciamento de produtos. O projeto simula o funcionamento de uma loja, e permite o cadastro de produtos criação de clientes, e realizar pedidos.
----
 
 ## Estrutura
 
