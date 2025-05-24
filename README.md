@@ -1,43 +1,31 @@
  Grupo: Felipe Bezerra, Claudio Gabriel
 
 
-# Loja Virtual - Projeto em Java
+# **Loja Virtual - Projeto Java com MySQL**
 
-Este é um sistema de loja virtual simples desenvolvido em Java, com funcionalidades básicas de administração, compras e gerenciamento de produtos. O projeto simula o funcionamento de uma loja, e permite o cadastro de produtos criação de clientes, e realizar pedidos.
+Este é um projeto que simula o uso de uma loja virtual, desenvolvido em Java com conexão ao banco de dados MySQL. O sistema possui funcionalidades para administração de produtos e interação com clientes, utilizando menus em console.
 
-## Estrutura
 
-O sistema é dividido em pacotes organizados:
 
-- `entidades`: Engloba as Classses do sistema (Produto, Cliente, Pedido, etc.).
-- `repositorios`: Armazenar e recuperar dados simulando um nível de persistência.
-- `servicos`: Regras de negócio e operações principais.
-- `menu`: Interfaces de navegação para o cliente e administrador por um terminal.
-- `Main.java`: Ponto de entrada do sistema, inicializando repositórios e serviços. Menu Inicial.
 
----
 
-## Funcionalidades
 
-- **Administrador**
-  - Cadastro e gerenciamento de produtos
-  - Visualização de pedidos realizados
 
-- **Cliente**
-  - Cadastro de conta
-  - Visualização e compra de produtos
-  - Carrinho de compras
-  - Finalização de pedidos
+# **Funcionalidades**
 
----
+Cadastro, listagem, atualização e remoção de produtos.
+Cadastro e listagem de clientes.
+Sistema de menus para admin e cliente.
+Conexão com banco de dados via JDBC.
 
-##  Como rodar
 
-### Requisitos:
-- Java 8 ou superior
-- IDE como Eclipse, IntelliJ IDEA, etc.
 
-### Execução:
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/kabum1.git
+
+
+# Como executar
+
+Configure um banco de dados MySQL e importe o arquivo BancoLoja.sql incluído no arquivo.
+
+Adicione o MySQL Connector/J ao classpath 
+
+Compile e execute a classe Main no diretório src.
