@@ -7,6 +7,10 @@ Este é um projeto que simula o uso de uma loja virtual, desenvolvido em Java co
 
 
 
+
+
+
+
 # **Funcionalidades**
 
 Cadastro, listagem, atualização e remoção de produtos.
@@ -16,10 +20,12 @@ Conexão com banco de dados via JDBC.
 
 
 
+
+
 # Como executar
 
-Configure um banco de dados MySQL e importe o arquivo BancoLoja.sql incluído no projeto.
+Configure um banco de dados MySQL e importe o arquivo BancoLoja.sql incluído no arquivo.
 
-Adicione o MySQL Connector/J ao classpath do seu projeto.
+Adicione o MySQL Connector/J ao classpath 
 
 Compile e execute a classe Main no diretório src.
