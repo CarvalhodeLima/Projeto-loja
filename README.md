@@ -1,13 +1,13 @@
  Grupo: Felipe Bezerra, Claudio Gabriel
 
 
-#Loja Virtual - Projeto Java com MySQL#
+# **Loja Virtual - Projeto Java com MySQL**
 
 Este é um projeto que simula o uso de uma loja virtual, desenvolvido em Java com conexão ao banco de dados MySQL. O sistema possui funcionalidades para administração de produtos e interação com clientes, utilizando menus em console.
 
 
 
-#Funcionalidades#
+# **Funcionalidades**
 
 Cadastro, listagem, atualização e remoção de produtos.
 Cadastro e listagem de clientes.
@@ -16,7 +16,7 @@ Conexão com banco de dados via JDBC.
 
 
 
-#Como executar#
+# Como executar
 
 Configure um banco de dados MySQL e importe o arquivo BancoLoja.sql incluído no projeto.
 
