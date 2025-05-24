@@ -1,74 +1,38 @@
 package entidades;
+
 import java.util.ArrayList;
+import java.util.List;
+
 public class CarrinhoDeCompras {
-    private int carrinhoID;
-    private Cliente cliente;
-    private double total;
-    private ArrayList<Produto> produtos;
-    private boolean finalizado;
+    private List<Produto> itens = new ArrayList<>();
 
-    public CarrinhoDeCompras() {
-        produtos = new ArrayList<>();
-    }
-    
-    public CarrinhoDeCompras(Cliente cliente) {
-    	this.cliente = cliente;
+    public void adicionarProduto(Produto produto) {
+        itens.add(produto);
     }
 
-    public int getCarrinhoID() {
-        return carrinhoID;
-    }
-
-    public void setCarrinhoID(Cliente cliente) {
-        this.carrinhoID = cliente.getClienteID();
-    }
-
-    public String getClienteNome() {
-        return cliente.getNome();
-    }
-
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
-    }
-
-    public double getTotal() {
-        return total;
-    }
-
-    public void setTotal(double total){
-        this.total = total;
-    }
-
-    public ArrayList<Produto> getProdutos() {
-        return produtos;
-    }
-
-    public void addProduto(Produto produto) {
-        produtos.add(produto);
-    }
-    
     public void removerProduto(Produto produto) {
-    	produtos.remove(produto);
+        if (itens.remove(produto)) {
+            System.out.println("Produto removido com sucesso.");
+        } else {
+            System.out.println("Produto não encontrado no carrinho.");
+        }
     }
 
-    public boolean isFinalizado() {
-        return finalizado;
+    public List<Produto> getProdutos() {
+        return itens;
     }
 
-    public void setFinalizado(boolean finalizado) {
-        this.finalizado = finalizado;
-    }
-    
-    @Override
-    public String toString() {
-        return "CarrinhoDeCompras{" +
-               "carrinhoID= " + carrinhoID +
-               ", cliente= " + cliente.getNome() +
-               ", total= " + total +
-               ", produtos= " + produtos +
-               "\n finalizado= " + finalizado +
-               '}';
+    public void listarItens() {
+        if (itens.isEmpty()) {
+            System.out.println("Carrinho vazio.");
+        } else {
+            for (Produto p : itens) {
+                System.out.println(p);
+            }
+        }
     }
 
-
+    public void limpar() {
+        itens.clear();
+    }
 }

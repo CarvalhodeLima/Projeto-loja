@@ -1,15 +1,23 @@
 package entidades;
-public class Produto{
+
+public class Produto {
+    private int id;
     private String nome;
     private double preco;
-    private int produtoID;
-    private int quantidade;
 
-    public Produto(int produtoID, String nome, double preco, int quantidade) {
+    public Produto(int id, String nome, double preco) {
+        this.id = id;
         this.nome = nome;
         this.preco = preco;
-        this.produtoID = produtoID;
-        this.quantidade = quantidade;
+    }
+
+    public Produto(String nome, double preco) {
+        this.nome = nome;
+        this.preco = preco;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getNome() {
@@ -19,23 +27,13 @@ public class Produto{
     public double getPreco() {
         return preco;
     }
-    
-    public int getProdutoID() {
-        return produtoID; 
-    }
-    
-    public int getQuantidade(){
-        return quantidade;
-    }
-    
+
     @Override
     public String toString() {
-        return "\n  - ID do Produto: " + produtoID +
-               "\n  - Nome do Produto: " + nome +
-               "\n  - Preço do Produto: $" + preco +
-               "\n  - Quantidade em estoque: " + quantidade + 
-               "\n";
+        return "Produto{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", preco=" + preco +
+                '}';
     }
-    
 }
-
